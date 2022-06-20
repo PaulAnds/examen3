@@ -62,7 +62,6 @@ export default class Contact extends Component {
           &times;
         </button>
             <div className="header"> Datos </div>
-            <br></br>
             <p><strong>Nombre: </strong> {this.state.name}</p>
             {this.state.phone && <p><strong>Telefono: </strong> {this.state.phone}</p>}
             <p><strong>Email: </strong> {this.state.email}</p>
