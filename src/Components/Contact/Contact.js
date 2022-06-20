@@ -17,7 +17,7 @@ export default class Contact extends Component {
             popUp: false,
             errors: {
                 name: false,
-                last: false
+                email: false
             }
         };
     }
@@ -34,7 +34,7 @@ export default class Contact extends Component {
     
     handleOnSubmit = e => {
         e.preventDefault();
-        const{name} = this.state;
+        const{name,email} = this.state;
         this.setState({
             
         })
@@ -42,6 +42,7 @@ export default class Contact extends Component {
         this.setState({
             errors:{
                 name: name.trim() === '',
+                email: email.trim() === '',
             }
         })
 
@@ -115,9 +116,16 @@ export default class Contact extends Component {
                         name="email" 
                         value = {this.state.email}
                         onChange={this.handleOnChange}
-                        required
+                        className={
+                            this.state.errors.email ? 'error': ''
+                        }
                     />
                 </label>
+                    {
+                        this.state.errors.email
+                        && 
+                        <div className= 'errorMessage'>Required</div>
+                    } 
                 
                 <label>
                 <br></br>
@@ -133,11 +141,6 @@ export default class Contact extends Component {
                         }
                     />
                 </label>
-                    {
-                        this.state.errors.message
-                        && 
-                        <div className= 'errorMessage'>Required</div>
-                    } 
 
                 <br></br>
                 <input type="submit" value="Submit"/>

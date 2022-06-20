@@ -1,20 +1,46 @@
-.Notes ul{
+.Notes{
+    height: 100vh;
+    width: 100%;
+    padding: 4rem 12rem;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: grid;
     display: flex;
-    list-style: none;
-    margin: 0;
-    margin-bottom:20px;
-    padding: 0;
-}
-.Notes li{
-    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.Notes a{
+.card {
+    margin-top: 4rem;
+    border-radius: 1rem;
+    margin: 40px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 18.6rem;
+    background-color: beige;
+}
+
+.card img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 50%;
+}
+
+
+.card-link {
+    margin: 0 7rem;
+    background-color: rgb(157, 82, 201);
+    width: 4rem;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
 }
 
-.Notes a:hover {
-    color: #ccc;
-    text-decoration: none;
+.card-link:hover {
+    background-color: rgba(43, 2, 53, 1); 
 }

@@ -12,7 +12,7 @@ display: flex;
 }
 .carta{
     font-weight: bold;
-    background-color: lightblue;
+    background-color: rgb(171, 117, 196);
     padding: 50px;
     border-radius: 20px;
 }

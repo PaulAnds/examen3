@@ -2,20 +2,20 @@ let notes = [
     {
         id: 1,
         button: 'ver',
-        title: 'Title 1',
-        description: 'My note 1 description'
+        title: 'TodoList',
+        description: 'quiero llorar'
     },
     {
         id: 2,
         button: 'ver',
-        title: 'Title 2',
-        description: 'My note 2 description'
+        title: 'Pomodoro',
+        description: 'Voy a llorar'
     },
     {
         id: 3,
         button: 'ver',
-        title: 'Title 3',
-        description: 'My note 3 description'
+        title: 'Calculadora',
+        description: 'Estoy llorando'
     },
 
 ];
