@@ -1,0 +1,29 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: '100%';
+    
+}
+.circle{
+padding: 50px;
+justify-content: center;
+display: flex;
+
+}
+.carta{
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.error{
+    border: 1px solid red;
+}
+
+
+.errorMessage{
+    color: red;
+
+}

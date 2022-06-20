@@ -1,0 +1,20 @@
+.Notes ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-bottom:20px;
+    padding: 0;
+}
+.Notes li{
+    padding: 10px;
+}
+
+.Notes a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.Notes a:hover {
+    color: #ccc;
+    text-decoration: none;
+}
